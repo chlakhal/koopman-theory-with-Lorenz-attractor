@@ -1,0 +1,8 @@
+# Ignore Python cache folders
+data/__pycache__/
+methods/__pycache__/
+train/__pycache__/
+utils/__pycache__/
+
+# Ignore virtual environment
+venv/
