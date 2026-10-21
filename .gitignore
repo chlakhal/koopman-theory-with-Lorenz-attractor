@@ -1,10 +1,18 @@
-# Ignore Python cache folders
-data/__pycache__/
-methods/__pycache__/
-methods/__pycache__/
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
 
-train/__pycache__/
-utils/__pycache__/
-
-# Ignore virtual environment
+# Virtual environments
 venv/
+.venv/
+
+# LaTeX build artefacts (the compiled PDF is kept)
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz

@@ -1,0 +1,68 @@
+{
+  "config": {
+    "dt": 0.02,
+    "lyapunov_exponent": 0.9056,
+    "threshold": 0.2,
+    "horizon_lyapunov_times": 6.0,
+    "n_train": 10000,
+    "n_val": 2000,
+    "n_test": 4000,
+    "n_test_starts": 46,
+    "seed": 0,
+    "quick": false,
+    "error_scale": 14.74275225429535,
+    "dk_latent": 32,
+    "dk_hidden": [
+      128,
+      128
+    ],
+    "dk_horizon": 40,
+    "dk_iterations": 3000
+  },
+  "methods": {
+    "DMD": {
+      "mean_rollout_error": 1.0660761905685145,
+      "median_valid_time_lyapunov": 0.054335999999999995,
+      "mean_valid_time_lyapunov": 0.052367304347826105,
+      "fraction_never_exceeded": 0.0,
+      "one_step_rmse": 1.0372639416069618
+    },
+    "EDMD": {
+      "mean_rollout_error": 0.7822374768096664,
+      "median_valid_time_lyapunov": 0.199232,
+      "mean_valid_time_lyapunov": 0.21301286956521737,
+      "fraction_never_exceeded": 0.0,
+      "one_step_rmse": 0.0010603486830841793
+    },
+    "Deep Koopman": {
+      "mean_rollout_error": 0.9515641421636521,
+      "median_valid_time_lyapunov": 0.443744,
+      "mean_valid_time_lyapunov": 0.4445314782608695,
+      "fraction_never_exceeded": 0.0,
+      "one_step_rmse": 0.7801553780446134,
+      "reconstruction_rmse": 0.2859689527847122
+    }
+  },
+  "edmd_selected": {
+    "degree": 4,
+    "n_features": 34,
+    "validation_errors": {
+      "2": 0.855109042398211,
+      "3": 0.8276623564079132,
+      "4": 0.7860774733283035
+    }
+  },
+  "deep_koopman_stabilisation": {
+    "spectral_radius_before": 1.0176268883100654,
+    "validation_error_raw": 1.080163767345208,
+    "validation_error_stabilised": 1.0217404319682366,
+    "stabilised_K_used": true
+  },
+  "deep_koopman_error_ladder": {
+    "reconstruction (no dynamics)": 0.024385129723428097,
+    "1 step ahead": 0.07189167302580597,
+    "1 Lyapunov time": 0.626940549621776,
+    "3 Lyapunov times": 1.194158634423314
+  },
+  "runtime_s": 416.9416391849518
+}

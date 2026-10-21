@@ -3,5 +3,4 @@ scipy
 matplotlib
 torch
 tqdm
-jupyter
-ipykernel
+pytest
